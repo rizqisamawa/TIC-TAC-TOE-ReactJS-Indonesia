@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Papan from "./komponen/Papan";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      {/* header */}
+      <p className="fs-1 fw-bolder text-center text-primary">
+        TIC TAC KENTUE
+        <span className="fs-6 fw-light text-dark">
+          <a href="0" className="text-docoration-none">
+            Rizqi Samawa
+          </a>
+        </span>
+      </p>
+      {/* header */}
+      <hr className="hori" />
+      <Papan />
     </div>
   );
 }
